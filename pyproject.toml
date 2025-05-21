@@ -5,13 +5,23 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "notes-cli"
 version = "0.1.0"
-description = "CLI to interact with the Notes FastAPI backend"
-authors = [{ name = "Ankita" }]
-dependencies = ["typer[all]", "httpx", "rich"]
-requires-python = ">=3.8"
+description = "A simple CLI tool for managing notes"
+readme = "README.md"
+authors = [
+    {name = "Ankita", email = "ankita.av.934@gmail.com"}
+]
+dependencies = [
+    "fastapi==0.115.12",
+    "httpx==0.28.1",
+    "pydantic==2.11.4",
+    "rich==14.0.0",
+    "typer==0.15.4"
+]
+requires-python = ">=3.6"
+urls = {Homepage = "https://github.com/ankita311/notes-cli"}
 
 [project.scripts]
-notes-cli = "cli.cli:app"
+notes-cli = "notes_cli.cli:app"
 
 [tool.setuptools.packages.find]
-include = ["cli"]
+include = ["notes_cli"]
