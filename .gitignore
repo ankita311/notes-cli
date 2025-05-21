@@ -1,0 +1,26 @@
+# .gitignore
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Python virtual environments
+notes-env/
+
+# Editor files
+*.swp
+.DS_Store
+.vscode/
+.idea/
+
+# OS junk files
+Thumbs.db
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
