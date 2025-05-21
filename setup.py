@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'notes-cli= cli.cli:app',  # Replace with your entry point function
+            'notes-cli= notes-cli.cli:app',  # Replace with your entry point function
         ],
     },
     install_requires=[
