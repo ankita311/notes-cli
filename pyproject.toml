@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "notes-cli"
+name = "ankita-notes-cli"
 version = "0.1.0"
 description = "A simple CLI tool for managing notes"
 readme = "README.md"
@@ -21,7 +21,7 @@ requires-python = ">=3.6"
 urls = {Homepage = "https://github.com/ankita311/notes-cli"}
 
 [project.scripts]
-notes-cli = "notes_cli.cli:app"
+ankita-notes-cli = "notes_cli.cli:app"
 
 [tool.setuptools.packages.find]
 include = ["notes_cli"]
