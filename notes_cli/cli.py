@@ -3,7 +3,7 @@ import httpx
 from rich import print
 
 app = typer.Typer()
-API_BASE = "https://notes-cli.onrender.com/"
+API_BASE = "https://notes-cli.onrender.com"
 
 @app.command(help="Greetings")
 def hello(name: str = typer.Option(..., help="Name")):
