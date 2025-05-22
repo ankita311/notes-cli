@@ -1,17 +1,20 @@
 from typing import List
 from fastapi import FastAPI, Response, status, HTTPException
 import sqlite3
-from . import schemas
+import schemas
 
 
 # Create table
-# cursor.execute("""
-# CREATE TABLE IF NOT EXISTS notes (
-#     id INTEGER PRIMARY KEY AUTOINCREMENT,
-#     title TEXT NOT NULL,
-#     content TEXT
-# )
-# """)
+conn = sqlite3.connect("notes.db")  # Connects to the DB file
+cursor = conn.cursor()
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS notes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    content TEXT
+)
+""")
+conn.close()
 
 app = FastAPI()
 
